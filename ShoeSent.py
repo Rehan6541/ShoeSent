@@ -10,13 +10,7 @@ page.content
 ## now let us parse the html page
 soup=bs(page.content,'html.parser')
 print(soup.prettify())
-#when you parse HTML using BeautifulSoup, you are converting the 
-#raw HTML content of a web page into a structured format, 
-#like a tree, where you can easily locate and manipulate individual 
-#elements (such as tags, attributes, or text).
 
-#page.content=> provides the raw HTML content,
-#while soup.prettify()=> offers a formatted, human-readable version of the parsed HTML content.
 
 ## now let us scrap the contents
 names=soup.find_all('span',class_="a-profile-name")
